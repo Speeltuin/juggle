@@ -1,0 +1,21 @@
+<head>
+  <title>WIP List</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>WIP List</h1>
+    </header>
+
+    <ul>
+      {{#each wipCounters}}
+        {{> wipCounter}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="wipCounter">
+  <li>{{name}}: {{amount}}</li>
+</template>
